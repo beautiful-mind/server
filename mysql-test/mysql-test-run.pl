@@ -1024,7 +1024,7 @@ sub ignore_option {
 
 # Setup any paths that are $opt_vardir related
 sub set_vardir {
-  my ($vardir)= @_;
+  ($opt_vardir)= @_;
 
   $path_vardir_trace= $opt_vardir;
   # Chop off any "c:", DBUG likes a unix path ex: c:/src/... => /src/...
